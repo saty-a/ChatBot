@@ -42,6 +42,22 @@ class BotResponse {
                 }
             }
 
+            message.contains("hi") -> {
+                when (random) {
+                    0 -> "Hello there!"
+                    1 -> "Sup"
+                    2 -> "Holla!"
+                    else -> "error"
+                }
+            }
+
+            message.contains("help") -> {
+                when ("help") {
+                    "help"-> "We are here to help!!"
+                    else -> "error"
+                }
+            }
+
             //How are you?
             message.contains("how are you") -> {
                 when (random) {
