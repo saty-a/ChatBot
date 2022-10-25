@@ -14,7 +14,7 @@ class BotResponse {
 
         return when {
             //For Flip coin
-            message.contains("flip") && message.contains("coint") -> {
+            message.contains("flip") && message.contains("coin") -> {
                 val r = (0..1).random()
                 val result = if (r == 0) "heads" else "tails"
 
